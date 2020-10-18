@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通讯录列表</title>
+    <style>
+        body
+        {
+            font-size:100%;
+            font-family:verdana,arial,'sans serif';
+            background-repeat:repeat-x;
+            background-color:#FFFFF0;
+            color:#000080;
+            margin:70px;
+        }
+        h1 {font-size:200%;}
+    </style>
+</head>
+<body>
+<div class="content">
+    <h1 align="center">通讯录列表</h1>
+    <table border="1px" align="center">
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>电话</th>
+            <th>邮箱</th>
+            <th>住址</th>
+            <th>QQ号</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>迪卢克</td>
+            <td>18888888888</td>
+            <td>18888888888@qq.com</td>
+            <td>蒙德城晨曦酒庄</td>
+            <td>18888888888</td>
+        </tr>
+        <tr>
+            <td>琴</td>
+            <td>19999999999</td>
+            <td>19999999999@qq.com</td>
+            <td>蒙德城西风骑士团</td>
+            <td>19999999999</td>
+        </tr>
+        <tr>
+            <td>七七</td>
+            <td>17777777777</td>
+            <td>17777777777@qq.com</td>
+            <td>璃月区不卜卢</td>
+            <td>17777777777</td>
+        </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <div class="buttonContainer" align="center">
+        <button onclick="add()">增加</button>
+        <button>删除</button>
+        <button>修改</button>
+    </div>
+</div>
+</body>
+<script>
+    function add()
+    {window.location = "add.html";}
+</script>
+</html>

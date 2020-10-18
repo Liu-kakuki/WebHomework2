@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加新的联系人</title>
+    <style>
+        body,form
+        {
+            font-size:100%;
+            font-family:verdana,arial,'sans serif';
+            background-repeat:repeat-x;
+            background-color:#FFFFF0;
+            color:#000080;
+            margin:70px;
+        }
+        h1 {font-size:200%;}
+    </style>
+</head>
+<body>
+<div align="center">
+    <h1>添加新的联系人</h1>
+    <form onsubmit="show()">
+        <input type="text" placeholder="姓名" required/>
+        <br><br>
+        <input type="text" placeholder="电话" maxlength="11"  required/>
+        <br><br>
+        <input type="email" placeholder="邮箱" pattern=".+@.+" required/>
+        <br><br>
+        <input type="text" placeholder="住址" required/>
+        <br><br>
+        <input type="text" placeholder="QQ号" required/>
+        <br><br>
+        <input type="submit" value="提交">
+    </form>
+</div>
+</body>
+<script>
+    function show()
+    {
+        confirm("添加联系人成功！")
+        return false;
+    }
+</script>
+</html>

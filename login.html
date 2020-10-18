@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style>
+        body
+        {
+            font-size:100%;
+            font-family:verdana,arial,'sans serif';
+            background-repeat:repeat-x;
+            background-color:#FFFFF0;
+            color:#000080;
+            margin:70px;
+        }
+        h1 {font-size:200%;}
+    </style>
+</head>
+<body>
+<div class="container" align="center">
+    <form  class="login-form" action="format.html" onsubmit="return login()" >
+        <h1>登录</h1>
+        <input type="text" id="NAME" name="name" placeholder="用户名" required/>
+        <br><br>
+        <input type="password" id="PASSWORD" name="password" placeholder="密码" required/>
+        <br><br>
+        <input type="submit" value="登录"/>
+        <br><br>
+        测试用户名及密码：
+        <br>
+        用户名：kakuki
+        <br>
+        密码：12345678
+    </form>
+</div>
+</body>
+<script>
+    function login()
+    {
+        var name = document.getElementById("NAME").value;
+        var password = document.getElementById("PASSWORD").value;
+        if (name=='kakuki' && password=='12345678')
+        {
+            alert('用户名和密码正确，登录成功！');
+            return true;
+        }
+        else
+        {
+            alert('用户名或密码错误，登录失败！');
+            return false;
+        }
+    }
+</script>
+</html>
